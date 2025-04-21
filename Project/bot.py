@@ -7,7 +7,7 @@ from telegram.ext import (
     ContextTypes,
 )
 
-TOKEN = "7941009196:AAEYWADLnww5_fVbElB-93Io139_zulmmOY"
+TOKEN = os.environ['TOKEN']
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     """Отправляет приветственное сообщение с кнопками."""
